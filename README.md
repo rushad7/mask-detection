@@ -3,4 +3,4 @@ This Python script is used to detect whether a people in the given image are wea
 The custum dataset was trained using Darknet.
 
 ### Usage:
-Usage : python custom_detector.py --image "/path/to/image" --config "/cfg/yolov3-custom.cfg" --weights "weights/yolov3-custom_final.weights" --names "class_names/voc.names"
+python custom_detector.py --image "/path/to/image" --config "/cfg/yolov3-custom.cfg" --weights "weights/yolov3-custom_final.weights" --names "class_names/voc.names"
