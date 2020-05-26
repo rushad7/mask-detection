@@ -26,14 +26,14 @@ dtype="uint8")
 weightsPath = os.path.sep.join([args["yolo"], "yolov3-custom_final.weights"])
 configPath = os.path.sep.join([args["yolo"], "yolov3-custom.cfg"])
 
-vs = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)
 
 print("[INFO] loading YOLO from disk")
 net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
 
 while True:
         
-    _,frame = vs.read()
+    _,frame = cap.read()
     frame = cv2.resize(frame, dsize=(400,400), interpolation=cv2.INTER_CUBIC)
     
     (H, W) = frame.shape[:2]
@@ -87,6 +87,6 @@ while True:
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
-vs.release()
+cap.release()
 cv2.destroyAllWindows()
 
