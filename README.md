@@ -4,7 +4,7 @@ The custom dataset was trained using Darknet.
 
 ### Usage for live detection:
 Feel free to use python3 if required.
-python2 yolo-live-cv2.py --yolo yolo
+python yolo-live-cv2.py --yolo yolo
 
 ### Usage for detection from images:
-python2 custom_detector.py --image "/path/to/image" --config "/cfg/yolov3-custom.cfg" --weights "weights/yolov3-custom_final.weights" --names "class_names/voc.names"
+python custom_detector.py --image "/path/to/image" --config "/cfg/yolov3-custom.cfg" --weights "weights/yolov3-custom_final.weights" --names "class_names/voc.names"
