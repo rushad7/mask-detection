@@ -3,7 +3,7 @@ This Python script is used to detect whether a people in the given image are wea
 The custom dataset was trained using Darknet.
 
 ### Usage for live detection:
-Feel free to use python3 if required.
+Feel free to use python3 if required.  
 python yolo-live-cv2.py --yolo yolo
 
 ### Usage for detection from images:
