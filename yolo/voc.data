@@ -1,0 +1,5 @@
+classes= 2
+train  = /path/to/train.txt
+valid  = /path/to/test.txt
+names = ~/mask-detection/yolo/custom.names
+backup = ~/darknet/backup/
